@@ -116,12 +116,14 @@ footer {
 @media (max-width: 768px) {
     #toolbar {
         flex-direction: column;
-        margin-right: 0;
+        margin-right: 20px;
+        margin-bottom: 0px;
         width: 100%;
     }
 
     #statistics {
-        margin: 20px auto;
+        margin-top: 20px;
+        margin-bottom: 0;
     }
 
     #petriDish {
