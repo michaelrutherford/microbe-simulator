@@ -1,7 +1,8 @@
-body {
+body, html {
     padding: 0;
-    margin-top: 0;
+    margin: 0;
     flex-direction: column;
+    display: flex;
     align-items: center;
     font-family: Arial, sans-serif;
     background-color: black;
@@ -14,13 +15,16 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    width: 100%;
+    width: 100vw;
     text-align: center;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
 header h1 {
-    margin: 0px;
+    margin: 0; 
+    padding: 10px 0;
 }
 
 .container {
@@ -30,7 +34,7 @@ header h1 {
     flex-grow: 1;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin-top: 0;
 }
 
@@ -47,11 +51,10 @@ header h1 {
 .toolbar-container {
     display: inline-flex;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 #toolbar {
-    display: inline-flex;
+    display: inline;
     background-color: rgb(240, 240, 240);
     padding: 10px;
     border: 1px solid #ccc;
@@ -59,12 +62,12 @@ header h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     margin-right: 10px;
-    height: 75%;
-
+    height: 70%;
 }
 
 #clearButton {
     padding: 5px;
+    max-height: 5vh;;
     cursor: pointer;
 }
 
@@ -77,25 +80,25 @@ header h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     min-width: 120px;
-    height: 75%;
+    height: 70%;
 }
 
 #statistics h2 {
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 0;
     margin-bottom: 10px;
     text-align: center;
 }
 
 #statistics p {
-    font-size: 16px;
+    font-size: 12px;
     margin: 5px 0;
 }
 
 .microbe {
     width: 20px;
     height: 20px;
-    margin: 10px 5px;
+    margin: 2px auto;
     border-radius: 50%;
     border-style: solid;
     border-width: 1px;
@@ -114,7 +117,8 @@ header h1 {
 footer {
     color: #878787;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 10pt;
+    font-size: 9pt;
     width: 100%;
     text-align: center;
+    padding: 15px;
 }
