@@ -10,26 +10,25 @@ document.addEventListener('DOMContentLoaded', () => {
         reproducer: document.getElementById('reproducerMicrobes')
     };
 
+    let selectedMicrobeType = null;
     let lifespans = new Map();
     let reproductionCount = new Map();
 
-    toolbar.addEventListener('dragstart', dragStart);
-    petriDish.addEventListener('dragover', dragOver);
-    petriDish.addEventListener('drop', drop);
+    toolbar.addEventListener('click', selectMicrobe);
+    petriDish.addEventListener('click', placeMicrobe);
     clearButton.addEventListener('click', clearAllMicrobes);
 
-    function dragStart(event) {
-        event.dataTransfer.setData('text/plain', event.target.id);
+    function selectMicrobe(event) {
+        if (event.target.classList.contains('microbe')) {
+            selectedMicrobeType = event.target.id;
+            toolbar.querySelectorAll('.microbe').forEach(microbe => microbe.classList.remove('selected'));
+            event.target.classList.add('selected');
+        }
     }
 
-    function dragOver(event) {
-        event.preventDefault();
-    }
-
-    function drop(event) {
-        event.preventDefault();
-        const id = event.dataTransfer.getData('text/plain');
-        const microbe = document.getElementById(id).cloneNode(true);
+    function placeMicrobe(event) {
+        if (!selectedMicrobeType) return;
+        const microbe = document.getElementById(selectedMicrobeType).cloneNode(true);
         microbe.classList.replace('microbe', 'dish-microbe');
         microbe.style.left = `${event.clientX - petriDish.offsetLeft - 10}px`;
         microbe.style.top = `${event.clientY - petriDish.offsetTop - 10}px`;
@@ -288,7 +287,6 @@ document.addEventListener('DOMContentLoaded', () => {
             reproducer: 'REP'
         };
     
-        // Count each type of microbe
         for (let type in microbeDisplays) {
             if (type !== 'total') {
                 const count = petriDish.querySelectorAll(`.dish-microbe[data-type="${type}"]`).length;
