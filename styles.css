@@ -58,6 +58,7 @@ header h1 {
     margin-right: 20px;
     margin-top: 20px;
     max-height: 5vh;
+
 }
 
 #clearButton {
@@ -69,20 +70,20 @@ header h1 {
 #statistics {
     display: inline-block;
     background-color: rgb(240, 240, 240);
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     margin-top: 20px;
     min-width: 120px;
-    text-align: center;
 }
 
 #statistics h2 {
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #statistics p {
