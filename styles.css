@@ -62,7 +62,7 @@ header h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     margin-right: 10px;
-    height: 70%;
+    height: 75%;
 }
 
 #clearButton {
@@ -80,7 +80,7 @@ header h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     min-width: 120px;
-    height: 70%;
+    height: 75%;
 }
 
 #statistics h2 {
@@ -98,7 +98,7 @@ header h1 {
 .microbe {
     width: 20px;
     height: 20px;
-    margin: 2px auto;
+    margin: 5px auto;
     border-radius: 50%;
     border-style: solid;
     border-width: 1px;
