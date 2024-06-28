@@ -44,7 +44,6 @@ header h1 {
 .toolbar-container {
     display: inline-flex;
     justify-content: center;
-    width: 100%;
     margin-bottom: 20px;
 }
 
