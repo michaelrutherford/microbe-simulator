@@ -49,22 +49,21 @@ header h1 {
 }
 
 #toolbar {
-    display: flex;
-    background: #e1e1e1;
+    display: inline-block;
+    background-color: rgb(240, 240, 240);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
+    margin-bottom: 20px;
     margin-top: 20px;
-    max-height: 5vh;
-
+    margin-right: 10px;
 }
 
 #clearButton {
     padding: 10px;
     cursor: pointer;
-    max-height: 5vh;
+    max-height: 10vh;
 }
 
 #statistics {
