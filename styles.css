@@ -1,9 +1,10 @@
 body {
-    display: flex;
+    display: inline;
+    padding: 0;
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin-top: 0;
     background-color: black;
     height: 100vh;
     justify-content: space-between;
@@ -46,10 +47,11 @@ header h1 {
 .toolbar-container {
     display: inline-flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 #toolbar {
-    display: block;
+    display: inline-flex;
     background-color: rgb(240, 240, 240);
     padding: 10px;
     border: 1px solid #ccc;
@@ -93,7 +95,7 @@ header h1 {
 .microbe {
     width: 20px;
     height: 20px;
-    margin: 10px auto;
+    margin: 10px 5px;
     border-radius: 50%;
     border-style: solid;
     border-width: 1px;
