@@ -15,7 +15,6 @@ header {
     color: #fff;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
 }
 
 header h1 {
@@ -108,32 +107,7 @@ header h1 {
 footer {
     color: #878787;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 10pt;
-    padding: 10px;
+    padding: 9px;
     width: 100%;
     text-align: center;
-}
-
-@media (max-width: 768px) {
-    #toolbar {
-        flex-direction: column;
-        margin-right: 20px;
-        margin-bottom: 0px;
-        width: 100%;
-    }
-
-    #statistics {
-        margin-top: 20px;
-        margin-bottom: 0;
-    }
-
-    #petriDish {
-        width: 100%;
-        height: 40vh;
-    }
-
-    #clearButton {
-        width: 100%;
-        max-height: none;
-    }
 }
