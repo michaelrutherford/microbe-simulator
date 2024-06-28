@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const microbe = document.getElementById(selectedMicrobeType).cloneNode(true);
         microbe.classList.replace('microbe', 'dish-microbe');
         microbe.style.left = `${event.clientX - petriDish.offsetLeft - 10}px`;
-        microbe.style.top = `${event.clientY - petriDish.offsetTop - 10}px`;
+        microbe.style.top = `${event.clientY - petriDish.offsetTop}px`;
         microbe.setAttribute('draggable', false);
         petriDish.appendChild(microbe);
         addBehavior(microbe);
