@@ -7,6 +7,7 @@ body {
     background-color: black;
     height: 100vh;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
 header {
@@ -27,21 +28,25 @@ header h1 {
     align-items: center;
     flex-grow: 1;
     justify-content: center;
+    width: 100%;
 }
 
 #petriDish {
-    width: 100%;
-    height: 50%;
+    width: 90%;
+    height: 50vh;
     position: relative;
     background-color: #d3ffff;
     margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 .toolbar-container {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     width: 100%;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 #toolbar {
@@ -54,7 +59,7 @@ header h1 {
     margin-right: 20px;
     margin-top: 20px;
     max-height: 5vh;
-
+    flex-wrap: wrap;
 }
 
 #clearButton {
@@ -66,20 +71,20 @@ header h1 {
 #statistics {
     display: inline-block;
     background-color: rgb(240, 240, 240);
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     margin-top: 20px;
     min-width: 120px;
+    text-align: center;
 }
 
 #statistics h2 {
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 #statistics p {
@@ -110,4 +115,28 @@ footer {
     color: #878787;
     font-family: 'Times New Roman', Times, serif;
     padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #toolbar {
+        flex-direction: column;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #statistics {
+        margin: 20px auto;
+    }
+
+    #petriDish {
+        width: 100%;
+        height: 40vh;
+    }
+
+    #clearButton {
+        width: 100%;
+        max-height: none;
+    }
 }
