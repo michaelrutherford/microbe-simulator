@@ -51,26 +51,27 @@ header h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
     margin-top: 20px;
     margin-right: 10px;
+    height: 75%;
+
 }
 
 #clearButton {
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
 }
 
 #statistics {
     display: inline-block;
     background-color: rgb(240, 240, 240);
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
     margin-top: 20px;
     min-width: 120px;
+    height: 75%;
 }
 
 #statistics h2 {
@@ -88,7 +89,7 @@ header h1 {
 .microbe {
     width: 20px;
     height: 20px;
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 50%;
     border-style: solid;
     border-width: 1px;
