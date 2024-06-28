@@ -15,6 +15,7 @@ header {
     color: #fff;
     width: 100%;
     text-align: center;
+    margin-bottom: 0;
 }
 
 header h1 {
@@ -28,11 +29,14 @@ header h1 {
     flex-grow: 1;
     justify-content: center;
     width: 100%;
+    height: 100%;
+    margin-top: 0;
 }
 
 #petriDish {
     width: 90%;
-    height: 50vh;
+    height: 70%;
+    margin-top: 0;
     position: relative;
     background-color: #d3ffff;
     border: 1px solid #ccc;
@@ -108,7 +112,7 @@ header h1 {
 footer {
     color: #878787;
     font-family: 'Times New Roman', Times, serif;
-    padding: 9px;
+    font-size: 10pt;
     width: 100%;
     text-align: center;
 }
