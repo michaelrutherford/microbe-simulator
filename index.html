@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microbe Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Microbe Simulator</h1>
+    </header>
+
+    <div class="container">
+        <div id="petriDish"></div>
+
+        <div class="toolbar-container">
+            <div id="toolbar">
+                <div class="microbe" style="background-color: red;" draggable="true" id="predator"></div>
+                <div class="microbe" style="background-color: orange;" draggable="true" id="virus"></div>
+                <div class="microbe" style="background-color: green;" draggable="true" id="reproducer"></div>
+                <div class="microbe" style="background-color: blue;" draggable="true" id="prey"></div>
+                <button id="clearButton">Clear</button>
+            </div>
+            <div id="statistics">
+                <h2>Microbe Statistics</h2>
+                <p id="totalMicrobes">Total Microbes: 0</p>
+                <p id="predatorMicrobes">PRD: 0</p>
+                <p id="virusMicrobes">VRX: 0</p>
+                <p id="preyMicrobes">PRY: 0</p>
+                <p id="reproducerMicrobes">REP: 0</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>Version 1.0 - &copy 2024 Michael Rutherford. Licensed under GNU GPL v3</footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
