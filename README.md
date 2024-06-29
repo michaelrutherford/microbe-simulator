@@ -1,4 +1,6 @@
 # Microbe Simulator
+![screenshot](https://github.com/michaelrutherford/microbe-simulator/blob/main/microbe-project.png)
+
 
 An interactive simulation where users can drag and drop different types of microbes (predators, viruses, prey, reproducers) to observe their unique behaviors and interactions. Predators hunt other microbes, viruses infect prey and reproducers, prey move randomly, and reproducers multiply under specific conditions. The code includes collision detection, lifespan management, and real-time updates on microbe statistics.
 
